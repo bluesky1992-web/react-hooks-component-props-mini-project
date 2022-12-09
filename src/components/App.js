@@ -3,16 +3,17 @@ import blogData from "../data/blog";
 import Header from "./Header";
 import About from "./About";
 import ArticleList from  './ArticleList'
+// import logo from "../assets/logo.svg";
 
 
 
-console.log(blogData);
+// console.log(blogData.image);
 
-function App({image ="logo.svg"}) {
+function App() {
   return (
     <div className="App">
       <Header name={blogData.name} />
-      <About about={blogData.about} src={blogData.image} />
+      <About about={blogData.about} image={blogData.image} />
       <ArticleList />
     </div>
   );
